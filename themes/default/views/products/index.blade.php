@@ -61,7 +61,7 @@
                         @if(theme('small_images', false))
                     </div>
                     @endif
-                    @if(theme('direct_checkout', false) && $product->description)
+                    @if($product->description)
                     <article class="prose dark:prose-invert">
                         {!! $product->description !!}
                     </article>
